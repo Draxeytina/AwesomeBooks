@@ -35,7 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
       for (let i = 0; i < this.library.length; i += 1) {
         const bookContainer = document.createElement('tr');
-        const bookInfo = document.createElement('h2');
+        const bookInfo = document.createElement('p');
+        bookInfo.setAttribute('class', 'list-content')
         const deleteBtn = document.createElement('button');
         deleteBtn.setAttribute('class', 'deletebtn');
         deleteBtn.setAttribute('data', i);
