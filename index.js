@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // initialise timer and set interval
-function siteTime() {
+let siteTime = () => {
   dateSection.textContent = DateTime.now().toLocaleString({
     month: "long",
     day: "numeric",
